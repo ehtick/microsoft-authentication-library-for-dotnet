@@ -339,8 +339,6 @@ namespace Microsoft.Identity.Client
                 throw new ArgumentNullException(nameof(clientSignedAssertionProvider));
             }
 
-            ValidateUseOfExperimentalFeature();
-
             return WithClientAssertionInternal(
                 clientSignedAssertionProvider: clientSignedAssertionProvider);
         }
